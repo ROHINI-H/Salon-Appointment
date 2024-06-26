@@ -13,6 +13,7 @@ MAIN_MENU() {
   # get service_id from customer
   read SERVICE_ID_SELECTED
   SALON_SERVICE=$($PSQL "select name from services where service_id=$SERVICE_ID_SELECTED")
+  
   # if salon service not available
   if [[ -z $SALON_SERVICE ]]
   then
@@ -21,8 +22,11 @@ MAIN_MENU() {
     # if service available, get details from customer
     echo "Your phone number"
     read CUSTOMER_PHONE
+    
     # check if customer name is already present in DB
     CUSTOMER_NAME=$($PSQL "select name from customers where phone='$CUSTOMER_PHONE'")
+    
+    # if new customer
     if [[ -z $CUSTOMER_NAME ]]
     then
       echo "Your beautiful name"
@@ -30,6 +34,8 @@ MAIN_MENU() {
       # add customer to DB
       INSERT_CUSTOMER=$($PSQL "insert into customers(phone,name) values ('$CUSTOMER_PHONE','$CUSTOMER_NAME')")
     fi
+
+    # schedule time for appointment
     echo "When shall we book your appointment, $(echo $CUSTOMER_NAME | sed 's/^ *//g')?"
     read SERVICE_TIME
 
