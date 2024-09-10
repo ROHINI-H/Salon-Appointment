@@ -1,7 +1,7 @@
 # Salon-Appointment
 I have created an interactive Bash program that uses PostgreSQL to track the customers and appointments for your salon as part of of learning Relational DB course from [freecodecamp](https://www.freecodecamp.org/learn/relational-database/).
 
-###Complete the tasks below
+### Complete the tasks below
 
 - You should create a database named salon
 - You should connect to your database, then create tables named customers, appointments, and services
