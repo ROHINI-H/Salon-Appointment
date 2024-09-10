@@ -3,9 +3,9 @@ I have created an interactive Bash program that uses PostgreSQL to track the cus
 
 Complete the tasks below
 
-You should create a database named salon
+- You should create a database named salon
 
-You should connect to your database, then create tables named customers, appointments, and services
+* You should connect to your database, then create tables named customers, appointments, and services
 
 Each table should have a primary key column that automatically increments
 
