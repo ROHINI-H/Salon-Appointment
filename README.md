@@ -13,10 +13,10 @@ Follow the instructions and get all the user stories below to pass to finish the
 **Don't forget to connect to your database to add tables after you create it 😄**   
 
 **Hints:**   
--- Your script needs to finish running after doing any of the tasks described below or the tests won't pass
--- The tests check the script output so don't use clear or other commands which might erase it
--- See examples.txt for example output of a passing script
--- The tests may add data to your database, feel free to delete it
+- Your script needs to finish running after doing any of the tasks described below or the tests won't pass
+- The tests check the script output so don't use clear or other commands which might erase it
+- See examples.txt for example output of a passing script
+- The tests may add data to your database, feel free to delete it
 
 **Notes:**   
 
